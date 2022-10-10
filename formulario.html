@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário RB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class= "box">
+        <form action="">
+            <fieldset>
+                <legend><b>Formulário de Freelancer</b></legend>
+                <br></br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelInput">Nome</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="sobrenome" id="sobrenome" class="inputUser" required>
+                    <label for="sobrenome" class="labelInput">Sobrenome</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                    <label for="telefone" class="labelInput">Telefone</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="email" id="email" class="inputUser" required>
+                    <label for="email" class="labelInput">Email</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" wrap="hard" name="mensagem" id="mensagem" wrap="hard" class="inputUser" required>
+                    
+                    <label for="mensagem" class="labelInput">Mensagem (Informe o que deseja)</label>
+                    
+                </div>
+                <br><br>
+
+                <div>
+                <label for="lingua" col-2><b>Lingua</b></label>
+                <select class="custom-select">
+
+                    <option select>Português (Brasil)</option>
+                    <option value="1">Inglês</option>
+                    <option value="2">Espanhol</option>
+                    <option value="3">Alemão</option>
+                    <option value="4">Francês</option>
+                <select>
+                </div>
+                <br>
+                <div class="custom-file">
+                    <label for="chooseFile"><b>Protótipo (Requisitos)</b></label>
+                    <input type="file" accept=".pdf, .doc, .docx, .jpeg., .png" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile"></label>
+                  </div>
+                  <br>
+                <div>
+                    <label for="lingua" id="paragrafo"><b>Linguagem Preferencial</b></label>
+
+                    <select class="custom-select">
+    
+                        <option select>Java</option>
+                        <option value="1">C++</option>
+                        <option value="2">JavaScript</option>
+                        <option value="3">PHP</option>
+                        <option value="4">Python</option>
+                        <option value="5">C</option>
+                        <option value="6">Outra</option>
+                    <select>
+                    </div>
+                <br></br>
+                <div>
+                    <label for="bancoDeDados" id="paragrafo"><b>Banco de Dados</b></label>
+                    <br>
+                    <input type="radio" id="mysql" name="bancoDeDados" value="mySQL" required>
+                    <label for="mySQL">MySQL</label>
+                    <input type="radio" id="postgresql" name="bancoDeDados" value="postgresql" required>
+                    <label for="postgresql">Postgresql</label>
+                    <input type="radio" id="mongodb" name="bancoDeDados" value="mongodb" required>
+                    <label for="mongodb">MongoDB</label>
+                    <input type="radio" id="na" name="bancoDeDados" value="na" required>
+                    <label for="na">N/A</label>
+                    <input type="radio" id="outra" name="bancoDeDados" value="outra" required>
+                    <label for="outra">Outra</label>
+                </div>
+                <br></br>
+                <div>
+                    <label for="turno_Reunioes" id="paragrafo"><b>Turno de Reuniões</b></label>
+
+                    <input type="checkbox" id="manha" name="turno_Reunioes" value="manha">
+                    <label for="manha">Manhã</label>
+                    <input type="checkbox" id="tarde" name="turno_Reunioes" value="tarde">
+                    <label for="tarde">Tarde</label>
+                    <input type="checkbox" id="noite" name="turno_Reunioes" value="noite">
+                    <label for="noite">Noite</label>
+                </div>
+                <br></br>
+                <div class="data_horario">
+                    <label for="horarioSugerido"><b>Horário Sugerido</b></label>
+                    <input type="time" name="horarioSugerido" class="data_horario" required>
+                <br></br>
+                    <label for="data_Prevista"><b>Data Prevista da Entrevista</b></label>
+                    <input type="date" name="data_Prevista" class="data_horario" required>
+                </div>
+                <br>
+                <input type="submit" name="submit" id="submit">
+                <input type="reset" name="reset" id="reset">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
